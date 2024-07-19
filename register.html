@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#" id="form">
+      <h2>Sign Up</h2>
+      <hr>
+      <div class="input-field">
+        <input type="text" id="name" required>
+        <span></span>
+        <label>Enter your Name</label>
+      </div>
+      <div class="input-field">
+        <input type="tel" size="10" id="mobile"  pattern="[7-9]{1}[0-9]{9}" required>
+        <span></span>
+        <label>Enter your Mobile</label>
+      </div>
+        <div class="input-field">
+        <input type="text" id="email" required>
+        <span></span>
+        <label>Enter your E-Mail</label>
+      </div>
+      <div class="input-field">
+        <input type="text" id="city" required>
+        <span></span>
+        <label>Enter your City</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password" required>
+        <span></span>
+        <label>Enter your password</label>
+      </div>
+    
+      <div class="buttons">
+        <button class="btn-hover color-1" id="btn">Register</button></div>
+      <div class="register">
+        <p>Already have an account? <a href="./index.html">Login Here</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+<script>
+    
+    let arr= JSON.parse(localStorage.getItem("user")) || [];
+    let form = document.getElementById("form");
+    let btn= document.getElementById("btn")
+btn.addEventListener("click" , getValue)
+function getValue(e){
+    e.preventDefault();
+    let obj= {
+        name:document.getElementById("name").value,
+        mobile:document.getElementById("mobile").value,
+        email:document.getElementById("email").value,
+        city:document.getElementById("city").value,
+        password:document.getElementById("password").value
+
+        };
+        if(obj.name==="" || obj.mobile==="" || obj.email==="" || obj.city==="" || obj.password===""){
+            alert("Please fill all the fields");
+        }
+        else{
+        arr.push(obj);
+        localStorage.setItem("userdetails",JSON.stringify(arr));
+        alert("Registration Successful")
+        form.reset();
+    }
+}
+
+</script>
+</html>
