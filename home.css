@@ -188,7 +188,7 @@
     transform: scale(1.025);
     cursor: pointer;
   }
-  .contact-container {
+  #contact-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -339,7 +339,7 @@
       width: 96%;
      margin: auto;
     }
-    .contact-container {
+    #contact-container {
       display: block;
     }
   
@@ -410,7 +410,7 @@
       padding: 10px;
     }
   
-    .contact-container {
+    #contact-container {
       display: block;
     }
   
