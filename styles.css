@@ -171,3 +171,14 @@ h2 {
   margin-top: 30px;
   color: #fff;
 }
+@media screen and (min-width:200px) and (max-width:768px){
+  .wrapper{
+    width: 96%;
+    }
+
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+  .wrapper{
+    width: 92%;
+    }
+  }
