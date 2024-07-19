@@ -68,6 +68,7 @@ function getValue(e){
         arr.push(obj);
         localStorage.setItem("userdetails",JSON.stringify(arr));
         alert("Registration Successful")
+        window.location.href="index.html"
         form.reset();
     }
 }

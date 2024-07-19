@@ -61,9 +61,6 @@ function displayData() {
     let add = document.createElement("button");
     add.innerText = "Add to Cart";
     add.id = "add";
-    add.addEventListener("click", function () {
-      addToCart(element);
-    });
     let buy = document.createElement("button");
     buy.innerText = "Buy Now";
     buy.id = "buy";
