@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+     <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.thank-you-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.thank-you-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.thank-you-box .icon {
+    margin-bottom: 20px;
+}
+
+.thank-you-box h1 {
+    font-size: 2.2em;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+button{
+    background: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
+button a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+@media screen and (min-width:200px) and (max-width:768px) {
+    .thank-you-wrapper {
+        width: 90%;
+    }
+    
+}
+     </style>
+</head>
+<body>
+    <div class="thank-you-wrapper">
+        <div class="thank-you-box">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#4caf50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M9 11l3 3L22 4"/><path d="M22 12A10 10 0 1 1 12 2a10 10 0 0 1 10 10z"/></svg>
+            </div>
+            <h1>Thank You!</h1>
+            <p>You have successfully signed out.</p>
+         <button>  <a href="index.html">Log In Again</a></button>
+        </div>
+    </div>
+</body>
+</html>
